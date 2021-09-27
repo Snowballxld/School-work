@@ -1,0 +1,6 @@
+st = "print every word in this sentence that has an even number of letters."
+words = st.split(" ")
+for x in range(len(words)):
+    letters = words[x]
+    if(len(letters) % 2 == 0):
+        print(words[x])
