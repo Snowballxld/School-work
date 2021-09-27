@@ -1,0 +1,5 @@
+st = ""
+for x in range(6):
+    st += str(x+1)
+    st += " "
+    print(st)
