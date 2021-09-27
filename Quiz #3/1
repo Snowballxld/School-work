@@ -1,0 +1,6 @@
+st = "Print only words that start with s in the sentence."
+words = st.split(" ")
+for x in range(len(words)):
+    letters = words[x]
+    if(letters[0] == "s"):
+        print(words[x])
