@@ -1,0 +1,8 @@
+def pap(a):
+    str = ""
+    for x in range(len(a)):
+        str += 3 * (a[x])
+    print(str)
+
+
+pap("hello")
