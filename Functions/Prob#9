@@ -1,0 +1,14 @@
+def Jack(a,b,c):
+  total = a + b + c
+  if(a == 11 or b == 11 or c == 11):
+    if total > 21:
+      total -= 10
+  bust(total)
+def bust(a):
+  if(a < 21):
+    print(a)
+  else:
+    print("Bust")
+
+Jack(9,9,11)
+Jack(9,9,9)
