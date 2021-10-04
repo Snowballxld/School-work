@@ -1,0 +1,14 @@
+def diff(a):
+  difference = abs(a - 100)
+  if(difference <= 10):
+    print(True)
+    return
+  difference = abs(a - 200)
+  if(difference <= 10):
+    print(True)
+    return
+  print(False)
+
+diff(109)
+diff(193)
+diff(150)
