@@ -1,0 +1,9 @@
+def firstLetter(a,b):
+  a = a.capitalize()
+  b = b.capitalize()
+  if(a[0] == b[0]):
+    print(True)
+  else:
+    print(False)
+
+firstLetter("fork", "Flap")
