@@ -1,0 +1,8 @@
+def reverse(a):
+  str = ""
+  words = a.split(" ")
+  for x in range(len(words)):
+    str += words[len(words) - 1 - x] + " "
+  print(str)
+
+reverse("I am home")
