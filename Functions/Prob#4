@@ -1,0 +1,11 @@
+def Cap(a):
+  str = ""
+  for x in range(len(a)):
+    if x == 0 or x == 3:
+      str +=(a[x].capitalize())
+    else:
+      str +=(a[x])
+  print(str)
+
+
+Cap("whyyyyyy")
