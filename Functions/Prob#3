@@ -1,0 +1,13 @@
+def twenty(a, b):
+    if (a == 20 or b == 20):
+        print(True)
+        return
+    if (a + b == 20):
+        print(True)
+        return
+    print(False)
+
+
+twenty(20, 10)
+twenty(12, 8)
+twenty(2, 3)
