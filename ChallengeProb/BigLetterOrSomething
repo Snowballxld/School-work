@@ -1,0 +1,91 @@
+def bigLetter(a):
+  if(a == "a"):
+    print("  *  ")
+    print(" * * ")
+    print("*****")
+    print("*   *")
+    print("*   *")
+  elif(a == "b"):
+    print("*****")
+    print("*   *")
+    print("*****")
+    print("*   *")
+    print("*****")
+  elif(a == "c"):
+    print("  ****")
+    print(" *  ")
+    print("*  ")
+    print(" *  ")
+    print("  ****")
+  elif(a == "d"):
+    print("**** ")
+    print("*   ** ")
+    print("*    *")
+    print("*   **")
+    print("****")
+  elif(a == "e"):
+    print("*****")
+    print("*  ")
+    print("*****")
+    print("*  ")
+    print("*****")
+  elif(a == "f"):
+    print("*****")
+    print("*  ")
+    print("***  ")
+    print("*  ")
+    print("*  ")
+  elif(a == "g"):
+    print("  *****  ")
+    print(" **  ")
+    print("**  ****")
+    print(" **   *")
+    print("  ****  ")
+  elif(a == "h"):
+    print("*    *")
+    print("*    *")
+    print("******")
+    print("*    *")
+    print("*    *")
+  elif(a == "i"):
+    print("*******")
+    print("   *  ")
+    print("   *  ")
+    print("   *  ")
+    print("*******")
+  """"
+  elif(a == "j"):
+
+  elif(a == "k"):
+
+  elif(a == "l"):
+
+  elif(a == "m"):
+
+  elif(a == "n"):
+
+  elif(a == "o"):
+
+  elif(a == "p"):
+
+  elif(a == "q"):
+
+  elif(a == "r"):
+
+  elif(a == "s"):
+
+  elif(a == "t"):
+
+  elif(a == "u"):
+
+  elif(a == "v"):
+
+  elif(a == "w"):
+
+  elif(a == "x"):
+
+  elif(a == "y"):
+  
+  elif(a == "z"):
+  """
+bigLetter("e")
