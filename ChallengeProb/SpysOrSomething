@@ -1,0 +1,9 @@
+def spy(a):
+  for x in range(len(a) - 2):
+    if(a[x] == 0 and a[x+1] == 0 and a[x+2] == 7):
+      print(True)
+      return
+  print(False)
+spy([1,2,3,4,5,6,0,2,7])
+spy([2,5,2,0,7,0,0,7])
+spy([1,7,2,0,4,5,0])
