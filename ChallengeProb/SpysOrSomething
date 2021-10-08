@@ -1,9 +1,16 @@
 def spy(a):
-  for x in range(len(a) - 2):
-    if(a[x] == 0 and a[x+1] == 0 and a[x+2] == 7):
-      print(True)
-      return
+  string = ""
+  for x in range(len(a)):
+    if(a[x] == 0 or a[x] == 7):
+      string += str(a[x])
+    if(a[x] == 7):
+      if(string == "007"):
+        print(True)
+        return
+      else:
+        string = ""
   print(False)
-spy([1,2,3,4,5,6,0,2,7])
+  
+spy([1,2,0,3,4,5,6,0,2,7])
 spy([2,5,2,0,7,0,0,7])
 spy([1,7,2,0,4,5,0])
