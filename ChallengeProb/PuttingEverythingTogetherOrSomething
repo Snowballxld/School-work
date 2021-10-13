@@ -1,0 +1,28 @@
+list = ["0","1","2,","3"]
+def display(list):
+  print(list)
+
+def replace(list,index,input):
+  list[index] = input
+
+def keepPlay(str):
+  if(str == "y"):
+    return(True)
+  elif(str == "n"):
+    return(False)  
+
+while(1 == 1):
+  input1 = input("Command: ")
+  if(input1 == "display"):
+    display(list)
+  elif(input1 == "replace"):
+    index = int(input('index: '))
+    newStr = input("String: ")
+    replace(list,index,newStr)
+  
+  input2 = input("play again: ")
+
+  if(keepPlay(input2) == True):
+    continue
+  elif(keepPlay(input2) == False):
+    break
