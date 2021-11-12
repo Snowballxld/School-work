@@ -1,0 +1,77 @@
+class person():
+  def __init__(self,name, email, hobbies):
+    self.name = name
+    self.email = email
+    self.hobbies = hobbies
+  def get_name(self):
+    return self.name
+  def get_email(self):
+    return self.email
+  def get_hobbies(self):
+    return self.hobbies
+  
+  
+class mailer(person):
+  def __init__(self, name, email, hobbies):
+    person.__init__(self, name, email, hobbies)
+  
+clients = []
+
+def checkInput(input1):
+  if(input1 == "add"):
+    add(clients)
+  elif(input1 == "count"):
+    count(clients)
+  elif(input1 == "send"):
+    send(clients)
+  elif(input1 == "display"):
+    display(clients)
+  elif(input1 == "exit"):
+    return False
+def add(clients):
+  name = input("name ")
+  email = input("email ")
+  hobbies = input("hobbies ")
+  person1 = mailer(name, email, hobbies)
+  flag = True
+  for x in range(len(clients)):
+    if(clients[x].email == email):
+      clients[x].hobbies = clients[x].hobbies + "," + hobbies
+      flag = False
+      break
+  if(flag == True):
+    clients.append(person1)
+
+
+def send(clients):
+  input1 = input("hobby to send:")
+  for x in range(len(clients)):
+    hobbies = clients[x].hobbies.split(",")
+    for i in range(len(hobbies)):
+      if(hobbies[i] == input1):
+        print("sent to " + clients[x].email)
+        break;
+
+
+def count(clients):
+  totalHobbies = {}
+  for x in range(len(clients)):
+    hobbies = clients[x].hobbies.split(",")
+    for i in range(len(hobbies)):
+      if(hobbies[i] in totalHobbies):
+        totalHobbies[hobbies[i]] = totalHobbies[hobbies[i]] + 1
+      else:
+        totalHobbies[hobbies[i]] = 1
+  print(totalHobbies)
+
+def display(clients):
+  for x in range(len(clients)):
+    str = ""
+    str += clients[x].email + "[" + clients[x].hobbies + "]"
+    print(str)
+
+while 1==1:
+  input1 = input("add,send,count,display,exit ")
+  if(checkInput(input1) == False):
+    break
+
